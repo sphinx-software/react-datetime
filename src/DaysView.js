@@ -137,7 +137,7 @@ var DateTimePickerDays = createClass({
 
 	monthYearView(lang, locale, date){
 		if (lang === 'ja'){
-			return date.year() + '年' + date.month() + '月';
+			return date.year().toString().concat('年').concat((date.month() + 1).toString()).concat('月');
 		}
 		return locale.months( date ) + ' ' + date.year();
 	},
