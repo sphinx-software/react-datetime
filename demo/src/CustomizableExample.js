@@ -58,6 +58,7 @@ export default class CustomizableExample extends Component {
           defaultValue={new Date()}
           onChange={console.log}
           {...this.state}
+          monthYearLocale={'ja'}
         />
 
         <hr />
